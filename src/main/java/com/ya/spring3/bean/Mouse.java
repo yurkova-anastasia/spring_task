@@ -12,6 +12,7 @@ public class Mouse {
     public String getColor() {
         return color;
     }
+
     @MyAnnotation
     public void setColor(String color) {
         this.color = color;
