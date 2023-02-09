@@ -1,16 +1,18 @@
-package com.ya.spring3.bean;
+package com.ya.spring3.bean.impl;
 
 import com.ya.spring3.annotation.MyAnnotation;
+import com.ya.spring3.bean.Animal;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Hamster {
+public class Horse {
     private String color;
 
-    public Hamster() {
+    public Horse() {
 
     }
 
+    @MyAnnotation
     public String getColor() {
         return color;
     }
@@ -18,5 +20,9 @@ public class Hamster {
     @MyAnnotation
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public void printMessage() {
+
     }
 }
