@@ -1,8 +1,11 @@
 package com.ya.spring3.bean.impl;
 
+import com.ya.spring3.annotation.Replace;
 import com.ya.spring3.annotation.Transactional;
 import com.ya.spring3.bean.Animal;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Snake implements Animal{
     private String color;
 
@@ -19,6 +22,7 @@ public class Snake implements Animal{
     }
 
     @Transactional
+    @Replace
     public void printMessage() {
         System.out.println("method is processing");
         throw new RuntimeException("sosi");
