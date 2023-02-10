@@ -11,7 +11,7 @@ import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
+//@Component
 public class TransactionalAnnotationBeanPostProcessor implements BeanPostProcessor {
     private Map<String, Class> map = new HashMap<>();
 
