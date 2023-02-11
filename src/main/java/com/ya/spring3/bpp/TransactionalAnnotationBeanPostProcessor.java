@@ -39,14 +39,14 @@ public class TransactionalAnnotationBeanPostProcessor implements BeanPostProcess
                     try {
                         value = method.invoke(bean, args);
                         System.out.println("transaction is committed");
+                        return value;
                     } catch (Exception ex){
                         System.out.println("transaction is rollbacked");
+                        return bean;
                     }
-                    return value;
                 }
             });
         }
-
         return bean;
     }
 }

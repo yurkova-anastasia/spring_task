@@ -3,9 +3,8 @@ package com.ya.spring3.bean.impl;
 import com.ya.spring3.annotation.Replace;
 import com.ya.spring3.annotation.Transactional;
 import com.ya.spring3.bean.Animal;
-import org.springframework.stereotype.Component;
 
-@Component
+
 public class Snake implements Animal{
     private String color;
 
