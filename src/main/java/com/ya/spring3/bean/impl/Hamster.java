@@ -2,9 +2,6 @@ package com.ya.spring3.bean.impl;
 
 import com.ya.spring3.annotation.MyAnnotation;
 import com.ya.spring3.annotation.Transactional;
-import com.ya.spring3.bean.Animal;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component

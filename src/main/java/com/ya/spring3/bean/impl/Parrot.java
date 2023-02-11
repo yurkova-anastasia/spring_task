@@ -1,7 +1,7 @@
 package com.ya.spring3.bean.impl;
 
 import com.ya.spring3.annotation.MyAnnotation;
-import com.ya.spring3.bean.Animal;
+import com.ya.spring3.annotation.Replace;
 
 public class Parrot {
     private String color;

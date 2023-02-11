@@ -1,8 +1,7 @@
 package com.ya.spring3.bean.impl;
 
-import com.ya.spring3.bean.Animal;
+import com.ya.spring3.annotation.Replace;
 import org.springframework.stereotype.Component;
-
 
 @Component
 public class Duck {
@@ -15,6 +14,7 @@ public class Duck {
         return color;
     }
 
+    @Replace
     public void setColor(String color) {
         this.color = color;
     }
